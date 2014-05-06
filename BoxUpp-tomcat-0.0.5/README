@@ -1,0 +1,36 @@
+Tomcat
+A puppet module for managing the installation of tomcat.
+
+Implemented Features:
+
+Installs Java and configure JAVA_HOME path
+Installs tomcat in linux
+
+To include this module in nodes.pp on tomcat node follow the following example
+ # Tomcat Nodes
+ node "tomcat.vagrant.com" 
+    {
+        include tomcat 
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
