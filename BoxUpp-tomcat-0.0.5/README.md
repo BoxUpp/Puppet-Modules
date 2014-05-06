@@ -113,4 +113,5 @@ You can read the complete module contribution guide [on the Puppet Labs wiki.](h
 The list of contributors can be found at: [https://github.com/BoxUpp/Puppet-Modules/graphs](https://github.com/BoxUpp/Puppet-Modules/graphs)
 
 ##Sites
-site :[http://paxcel.net/](http://paxcel.net/)  [http://boxupp.com/](http://boxupp.com/)
+site :[http://paxcel.net/](http://paxcel.net/) 
+      [http://boxupp.com/](http://boxupp.com/)
