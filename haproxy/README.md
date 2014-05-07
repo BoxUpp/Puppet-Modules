@@ -9,16 +9,17 @@
     * [Setup requirements](#setup-requirements)
     * [Beginning with haproxy](#beginning-with-haproxy)
 4. [Usage - Configuration options and additional functionality](#usage)
+5. [Dependencies - ssl cerrtificate ](#Dependencies)
 5. [Limitations - OS compatibility, etc.](#limitations)
 6. [Development - Guide for contributing to the module](#development)
 
 ##Overview
 
-The haproxy module installs the haproxy-1.5-dev19.el6.x86_64 with default ssl certicicates provided in this module
+The haproxy module installs the haproxy-1.5-dev19.el6.x86_64 with default ssl certicicates provided in this module.
 
 ##Module Description
 
-The haproxy module handles installing, configuring, and running haproxy with ssl across a range of operating systems and distributions.
+The haproxy module handles installing, configuring, and running haproxy with ssl across a range of operating systems and distributions
 
 ##Setup
 
@@ -54,6 +55,14 @@ The following parameters are available in the haproxy module:
 
 The is the directory from  where the haproxy module will get its setup files.
 
+
+##Dependencies
+
+####`ssl cerrtificate`
+
+To generate your own ssl certificates please follow the following links
+
+[http://grahamc.com/blog/openssl-madness-how-to-create-keys-certificate-signing-requests-authorities-and-pem-files/](http://grahamc.com/blog/openssl-madness-how-to-create-keys-certificate-signing-requests-authorities-and-pem-files/)
 
 ##Limitations
 
