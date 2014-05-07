@@ -1,0 +1,11 @@
+name    'BoxUpp-mysql'
+version '0.0.4'
+source 'UNKNOWN'
+author 'BoxUpp'
+license 'GNU'
+summary 'A puppet module for installing and configuring mysql'
+description ''
+project_page 'http://www.boxupp.com/'
+
+## Add dependencies, if any:
+# dependency 'username/name', '>= 1.2.0'

@@ -1,0 +1,28 @@
+{
+  "checksums": {
+    "tests/init.pp": "dd17d3bb6c99eaccfb0209157b84fc4f",
+    "manifests/init.pp": "bb5069dfc32c66ea2c59126b985bf022",
+    "README.md": "cd85a345c670f30b39962673478deda1",
+    "templates/root.my.cnf.erb": "a24c8a18e189fc6333e7ddaa52e94082",
+    "spec/spec_helper.rb": "a55d1e6483344f8ec6963fcb2c220372",
+    "Modulefile": "603950a94251a4ec0866c9f2fd0600b1",
+    "LICENSE": "f0b6fdc310531526f257378d7bad0044",
+    "README": "76618bdc5353d9e7ce4aec19df24e0b4",
+    "files/my.cnf": "21a5bcd281d57403a39a99c61e1fc8f5",
+    "templates/root.my.cnf.backup.erb": "5dd30de2d52c5cfabf069bff3a6414d2"
+  },
+  "types": [
+
+  ],
+  "license": "GNU",
+  "source": "UNKNOWN",
+  "project_page": "http://www.boxupp.com/",
+  "description": "",
+  "version": "0.0.4",
+  "summary": "A puppet module for installing and configuring mysql",
+  "name": "BoxUpp-mysql",
+  "author": "BoxUpp",
+  "dependencies": [
+
+  ]
+}

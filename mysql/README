@@ -1,0 +1,10 @@
+Mysql
+A puppet module for installing and configuring mysql
+
+Instructions
+To include this module on mysql node include this module under nodes.pp 
+ # mysql Nodes
+ node "mysql.vagrant.com" 
+    {
+        include mysql 
+    }
