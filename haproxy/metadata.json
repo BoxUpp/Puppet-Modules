@@ -1,0 +1,29 @@
+{
+  "checksums": {
+    "Dependencies": "67269c88b5eb37f6e70c135ec0e87f12",
+    "files/haproxy.cfg": "5719b22a10871c39b756869d0e277364",
+    "tests/init.pp": "74d2f65bdc19b63f9e7ba4311bf6cf1b",
+    "manifests/init.pp": "0224b5ca04dd75e39f8c3d46a6692d0a",
+    "Readme.md": "13db77a94b01eb9408e63be7b86c0735",
+    "Modulefile": "c0f40cc1fbe830ea668c4e47c4acb7a8",
+    "files/haproxy-1.5-dev19.el6.x86_64.rpm": "449af8d425ac83e6a52dbc63f060a37a",
+    "files/server.pem": "baa07c502b7d7583a39b8a27f0ab02bd",
+    "LICENSE": "f0b6fdc310531526f257378d7bad0044",
+    "spec/spec_helper.rb": "a55d1e6483344f8ec6963fcb2c220372",
+    "README.md": "5610c7ed2ef5143994c36151f8d0b5e3"
+  },
+  "types": [
+
+  ],
+  "license": "Apache License, Version 2.0",
+  "source": "UNKNOWN",
+  "project_page": "UNKNOWN",
+  "description": "UNKNOWN",
+  "version": "0.0.2",
+  "summary": "UNKNOWN",
+  "name": "BoxUpp/haproxy1",
+  "author": "BoxUpp",
+  "dependencies": [
+
+  ]
+}
