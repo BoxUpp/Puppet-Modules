@@ -1,0 +1,40 @@
+Maven
+A puppet module for managing the installation of apache-maven.
+
+Implemented Features:
+
+Installs Java and configure MAVEN_HOME path
+Installs APACHE-MAVEN in linux
+
+To include this module in nodes.pp on maven node follow the following example
+ # Tomcat Nodes
+ node "maven.vagrant.com" 
+    {
+        include maven 
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

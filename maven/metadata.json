@@ -1,0 +1,25 @@
+{
+  "checksums": {
+    "README": "13d211e4eb2b404cc95c007a2a076e69",
+    "LICENSE": "f0b6fdc310531526f257378d7bad0044",
+    "manifests/init.pp": "be2a92491e0da2ade4cc2fc6efe9e3dc",
+    "tests/init.pp": "8cab3a35a56af333a8546524028b15f6",
+    "Modulefile": "9da7522a571c579702a1f4c816dd378e",
+    "README.md": "582b7460511d987fb4b917fb3ed8d0ec",
+    "spec/spec_helper.rb": "a55d1e6483344f8ec6963fcb2c220372"
+  },
+  "types": [
+
+  ],
+  "license": "Apache License, Version 2.0",
+  "source": "UNKNOWN",
+  "project_page": "UNKNOWN",
+  "description": "UNKNOWN",
+  "version": "0.0.6",
+  "summary": "A puppet module to install apache maven",
+  "name": "BoxUpp-apache_maven",
+  "author": "BoxUpp",
+  "dependencies": [
+
+  ]
+}
