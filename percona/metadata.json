@@ -1,0 +1,25 @@
+{
+  "checksums": {
+    "README.md": "bec29ea11d2e951314b9a9a635b10297",
+    "manifests/init.pp": "a927e3e2827d2d2058ec25158531db13",
+    "tests/init.pp": "192c75edf7f03d82914641710e421486",
+    "README": "a7bbefe196a010d38a9885e61574a3ce",
+    "spec/spec_helper.rb": "a55d1e6483344f8ec6963fcb2c220372",
+    "Modulefile": "1042f35041c2baadc053d6c556909182",
+    "LICENSE": "f0b6fdc310531526f257378d7bad0044"
+  },
+  "types": [
+
+  ],
+  "license": "Apache License, Version 2.0",
+  "source": "UNKNOWN",
+  "project_page": "UNKNOWN",
+  "description": "It automatically restores data from the percona backup folder .Please donot run this module in production environment as because it \ncleans mysql data directory before restoring from the backup.",
+  "version": "0.0.4",
+  "summary": "This is a puppet module to install percona-backup.A backup utilty tool for  mysql database server.",
+  "name": "BoxUpp-percona",
+  "author": "BoxUpp",
+  "dependencies": [
+
+  ]
+}

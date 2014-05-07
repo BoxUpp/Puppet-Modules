@@ -1,0 +1,12 @@
+name    'BoxUpp-percona'
+version '0.0.4'
+source 'UNKNOWN'
+author 'BoxUpp'
+license 'Apache License, Version 2.0'
+summary 'This is a puppet module to install percona-backup.A backup utilty tool for  mysql database server.'
+description 'It automatically restores data from the percona backup folder .Please donot run this module in production environment as because it 
+cleans mysql data directory before restoring from the backup.'
+project_page 'UNKNOWN'
+
+## Add dependencies, if any:
+# dependency 'username/name', '>= 1.2.0'

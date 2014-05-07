@@ -1,0 +1,37 @@
+
+Percona
+A puppet module for managing the installation of percona and restoring a mysql percona backup.
+
+Implemented Features:
+
+Installs percona and restores mysql percona backup on machine
+Dependencies
+
+Mysql and mysql percona backup
+
+To include this module in nodes.pp on mysql node follow the following example
+# MySQL Nodes
+node "mysql.vagrant.com" 
+    {
+        include percona 
+    }
+
+Please donot run this module in production environment as because it
+cleans mysql data directory before restoring from the backup
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
