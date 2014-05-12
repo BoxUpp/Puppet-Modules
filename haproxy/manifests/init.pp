@@ -17,7 +17,7 @@
 
 class haproxy  
 
-		 # Define your source diectory path here.
+		 #Define your source diectory path here.
 		(
 			$sourcefile = '/vagrant/modules/haproxy/files',
 		)
