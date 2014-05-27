@@ -1,4 +1,4 @@
-#Tomcat-Cluster
+#Apache Mod_jk for Tomcat-Cluster
 
 ####Table of Contents
 
