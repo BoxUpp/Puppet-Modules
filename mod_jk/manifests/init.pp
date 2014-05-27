@@ -43,9 +43,9 @@ class mod_jk
 		# Define mod_jk modules source path
 		$source_path 	= hiera('mod_jk::source_path',		'/vagrant/modules/mod_jk/files' ),
 		# Define IP for node1
-		$node1_ip		= hiera ('mod_jk::node1_ip',    	'192.168.111.23'),
+		$node1_ip	= hiera ('mod_jk::node1_ip',    	'192.168.111.23'),
 		# Define IP for node2
-		$node2_ip		= hiera ('mod_jk::node2_ip',    	'192.168.111.24'),
+		$node2_ip	= hiera ('mod_jk::node2_ip',    	'192.168.111.24'),
 		)
 		{
 			Exec { path    => ['/usr/bin', '/usr/sbin', '/bin', '/sbin',] }
