@@ -1,0 +1,12 @@
+name    'BoxUpp-tomcatcluster'
+version '0.0.1'
+source 'UNKNOWN'
+author 'BoxUpp'
+license 'Apache License, Version 2.0'
+summary 'This is a puppet module to install and configure apache tomcat cluster using httpd and mod_jk connector'
+description 'UNKNOWN'
+project_page 'UNKNOWN'
+dependency 'BoxUpp/tomcat', '>=0.0.6'
+
+## Add dependencies, if any:
+# dependency 'username/name', '>= 1.2.0'

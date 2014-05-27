@@ -1,0 +1,38 @@
+ # Coma sperated list of load balancers
+	worker.list = bal1,stat
+ 
+# first node (our T1)
+	worker.tomcat1.type = ajp13
+	worker.tomcat1.host = <%= scope.lookupvar('mod_jk::node1_ip') %>
+	worker.tomcat1.port = 8009
+	worker.tomcat1.lbfactor = 10
+ 
+# second node (our T2)
+	worker.tomcat2.type = ajp13
+	worker.tomcat2.host =  <%= scope.lookupvar('mod_jk::node2_ip') %>
+	worker.tomcat2.port = 8009
+	worker.tomcat2.lbfactor = 10
+ 	worker.bal1.type = lb
+
+# sticky session is enabled
+	worker.bal1.sticky_session = 1
+	worker.bal1.balance_workers = tomcat1,tomcat2
+
+# added for status
+	worker.stat.type=status
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
