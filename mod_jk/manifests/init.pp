@@ -78,7 +78,7 @@ class mod_jk
 			
 			package { 'gcc-c++':
 				ensure => installed,
-                require => Package['gcc'],
+                		require => Package['gcc'],
 				}
 			
 			package { 'make':
