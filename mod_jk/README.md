@@ -26,7 +26,7 @@ The Tomcat-Cluster module handles installing, configuring, and running apache an
 This module uses following architecture 
 
 	
-			  <img src="https://docs.google.com/a/paxcel.net/file/d/0B2FFRQi-X4YlTlVyQ0xxYkU5YVU/edit"></img>
+			  <img src="http://www.boxupp.com/assets/img/img-create.png"></img>
 
 ##Setup
 
