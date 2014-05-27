@@ -1,13 +1,13 @@
-#Apache Mod_Jk for Tomcat-Cluster
+#Mod_Jk for Apache Tomcat-Cluster
 
 ####Table of Contents
 
 1. [Overview](#overview)
 2. [Module Description - What the module does and why it is useful](#module-description)
-3. [Setup - The basics of getting started with Tomcat-Cluster](#setup)
-    * [What Tomcat-Cluster affects](#what-Tomcat-Cluster-affects)
+3. [Setup - The basics of getting started with Mod_Jk](#setup)
+    * [What Mod_Jk affects](#what-Mod_Jk-affects)
     * [Setup requirements](#setup-requirements)
-    * [Beginning with Tomcat-Cluster](#beginning-with-Tomcat-Cluster)
+    * [Beginning with Mod_Jk](#beginning-with-Mod_Jk)
 4. [Usage - Configuration options and additional functionality](#usage)
 5. [Reference - An under-the-hood peek at what the module is doing and how](#reference)
 5. [Limitations - OS compatibility, etc.](#limitations)
@@ -15,11 +15,11 @@
 
 ##Overview
 
-The Tomcat-Cluster module installs the Tomcat cluster using apache and tomcat connector mod_jk.
+The Mod_Jk module installs the Tomcat cluster using apache and tomcat connector mod_jk.
 
 ##Module Description
 
-The Tomcat-Cluster module handles installing, configuring, and running apache and tomcat connector mod_jk across a range of operating systems and distributions.
+The Mod_Jk module handles installing, configuring, and running apache and tomcat connector mod_jk across a range of operating systems and distributions.
 
 ##Architecture
 
@@ -29,15 +29,15 @@ This module uses following architecture
 
 ##Setup
 
-###What Tomcat-Cluster affects
+###What Mod_Jk affects
 
 * Install mod_jk module for apache.
 * Configures httpd.conf.
 * configures worker.properties file.
 
-###Beginning with Tomcat-Cluster
+###Beginning with Mod_Jk
 
-`include 'Tomcat-Cluster'` is enough to get you up and running.  If you wish to pass in
+`include 'Mod_Jk'` is enough to get you up and running.  If you wish to pass in
 parameters Setsing which servers to use, then:
 
 ```puppet
@@ -49,17 +49,17 @@ node "Tomcat-Cluster.vagrant.com"
 
 ##Usage
 
-All interaction with the Tomcat-Cluster module can do be done through the main mod_jk class.
+All interaction with the Mod_Jk module can do be done through the main mod_jk class.
 This means you can simply toggle the options in `mod_jk` to have full functionality of the module.
 
 
 ###Parameters
 
-The following parameters are available in the Tomcat-Cluster module:
+The following parameters are available in the Mod_Jk module:
 
 ####`source_path`
 
-The is the directory from  where the Tomcat-Cluster module will get its setup files.
+The is the directory from  where the Mod_Jk module will get its setup files.
 
 ####`mod_jk_version`
 
