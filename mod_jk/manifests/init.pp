@@ -43,53 +43,53 @@ class mod_jk
 		# Define mod_jk modules source path
 		$source_path 	= hiera('mod_jk::source_path',		'/vagrant/modules/mod_jk/files' ),
 		# Define IP for node1
-		$node1_ip		= hiera ('mod_jk::node1_ip',    	'192.168.111.23'),
+		$node1_ip	= hiera ('mod_jk::node1_ip',    	'192.168.111.23'),
 		# Define IP for node2
-		$node2_ip		= hiera ('mod_jk::node2_ip',    	'192.168.111.24'),
+		$node2_ip	= hiera ('mod_jk::node2_ip',    	'192.168.111.24'),
 		)
 		{
 			Exec { path    => ['/usr/bin', '/usr/sbin', '/bin', '/sbin',] }
 			 
 			package { 'epel-release-6-8.noarch':
-                provider => 'rpm',
-                ensure => installed,
-                source => "http://mirror-fpt-telecom.fpt.net/fedora/epel/6/i386/epel-release-6-8.noarch.rpm";
+        			 provider => 'rpm',
+        			 ensure => installed,
+                		source => "http://mirror-fpt-telecom.fpt.net/fedora/epel/6/i386/epel-release-6-8.noarch.rpm";
 				}
 						
 			 package { 'httpd':
-                ensure => installed,
-                require => Package['epel-release-6-8.noarch'],
+                		ensure => installed,
+                		require => Package['epel-release-6-8.noarch'],
 				}
 				
 			package { 'httpd-devel':
 				ensure => installed,
-                require => Package['httpd'],
+                		require => Package['httpd'],
 				}
 			
 			package { 'wget':
 				ensure => installed,
-                require => Package['httpd-devel'],
+                		require => Package['httpd-devel'],
 				}
 				
 			package { 'gcc':
 				ensure => installed,
-                require => Package['wget'],
+                		require => Package['wget'],
 				}
 			
 			package { 'gcc-c++':
 				ensure => installed,
-                require => Package['gcc'],
+                		require => Package['gcc'],
 				}
 			
 			package { 'make':
 				ensure => installed,
-                require => Package['gcc-c++'],
+                		require => Package['gcc-c++'],
                        
 				}
 				
 			package { 'libtool':
 				ensure => installed,
-                require => Package['make'],
+                		require => Package['make'],
 				}
 			
 			exec { 'get_modjk_installer':
