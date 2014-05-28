@@ -17,11 +17,11 @@
 
 The nagios module installs and configure nagios with nsca which monitors application logs through nagios.In order to monitor logs of your application 
 please add following files at you Java class path and define IP of nagios server at log4j.xml this files are available on files directory of this module.
-	* log4j.xml
-	* log4j-1.2.16.jar
-	* NagiosAppender-1.0.1-SNAPSHOT.jar
-	* NagiosIncludeExcludeFilters.properties
-	* nsca_send_clear.cfg
+	* [log4j.xml]
+	* [log4j-1.2.16.jar]
+	* [NagiosAppender-1.0.1-SNAPSHOT.jar]
+	* [NagiosIncludeExcludeFilters.properties]
+	* [nsca_send_clear.cfg]
 
 ##Module Description
 
