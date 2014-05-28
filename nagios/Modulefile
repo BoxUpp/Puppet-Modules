@@ -1,0 +1,17 @@
+name    'BoxUpp-nagios'
+version '0.0.1'
+source 'UNKNOWN'
+author 'BoxUpp'
+license 'Apache License, Version 2.0'
+summary 'This is module installs and configures nagios with nsca to monitor your application log of your java application to monitor logs of your java application
+	please include the following files at you Java class path and define IP of nagios server at log4j.xml this files are available on files directory of this module
+	1.log4j.xml
+	2.log4j-1.2.16.jar
+	3.NagiosAppender-1.0.1-SNAPSHOT.jar
+	4.NagiosIncludeExcludeFilters.properties
+	5.nsca_send_clear.cfg '
+description 'UNKNOWN'
+project_page 'UNKNOWN'
+
+## Add dependencies, if any:
+# dependency 'username/name', '>= 1.2.0'

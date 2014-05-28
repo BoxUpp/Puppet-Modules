@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE log4j:configuration SYSTEM "log4j.dtd"> 
+
+<log4j:configuration>
+  
+  <appender name="nagios.log" class="org.apache.log4j.nagios.NagiosAppender">
+   <param name="Host" value="192.168.111.23"/> 
+   <param name="Port" value="5667"/>
+   <param name="ConfigFile" value="./nsca_send_clear.cfg"/>
+   <param name="ServiceNameDefault" value="NagiosLogs"/>
+   <param name="useMDCServiceName" value="false"/>
+   <param name="MDCServiceNameKey" value="nagios_service_name"/>
+   
+   <param name="useMDCHostName" value="false"/>
+   <param name="MDCHostNameKey" value="hostName"/>
+   <param name="InitializeMDCHostNameValue" value="localhost"/>
+   
+   <param name="useShortHostName" value="false"/>
+   <param name="MDCCanonicalHostNameKey" value="nagios_canonical_hostname"/>
+   <param name="Log4j_Level_INFO"     value="NAGIOS_OK"/>
+   <param name="Log4j_Level_WARN"     value="NAGIOS_WARN"/>
+   <param name="Log4j_Level_ERROR"    value="NAGIOS_CRITICAL"/>
+   <param name="Log4j_Level_FATAL"    value="NAGIOS_CRITICAL"/>
+   
+   <param name="IncludeFilterEnabled"    value="false"/>
+   <param name="ExcludeFilterEnabled"    value="false"/>
+   <param name="PatternFilterFile"  value="./NagiosIncludeExcludeFilters.properties"/>
+   
+   <param name="SendStartupMessageOK" value="Application Errors Cleared"/>
+   
+   <layout class="org.apache.log4j.PatternLayout">
+    <param name="ConversionPattern" value="server: %X{nagios_canonical_hostname}: %m%n"/>
+   </layout>
+  </appender>
+  
+  <appender name="err.log" class="org.apache.log4j.DailyRollingFileAppender">
+    <param name="Append"    value="true" />
+    <param name="File"      value="../logs/err.log" />
+    <param name="Threshold" value="DEBUG"/>
+    
+    <layout class="org.apache.log4j.PatternLayout">
+      <param name="ConversionPattern"
+             value="[%d{DATE}] %5p [%t] (%C{1}:%M) - %m%n" />
+    </layout> 
+    <filter class="org.apache.log4j.varia.LevelRangeFilter">
+      <param name="LevelMin" value="ERROR" />
+      <param name="LevelMax" value="ERROR" />
+      <param name="AcceptOnMatch" value="true" />
+    </filter>   
+  </appender>
+
+ <appender name="info.log" class="org.apache.log4j.DailyRollingFileAppender">
+    <param name="Append" value="true" />
+    <param name="File"   value="../logs/info.log" />
+    <layout class="org.apache.log4j.PatternLayout">
+      <param name="ConversionPattern"
+             value="[%d{DATE}] %5p [%t] (%F:%M:%L) - %m%n" />
+    </layout>
+    <filter class="org.apache.log4j.varia.LevelRangeFilter">
+      <param name="LevelMin" value="WARN" />
+      <param name="LevelMax" value="INFO" />
+      <param name="AcceptOnMatch" value="true" />
+    </filter>
+  </appender>
+  
+  <root>
+    <appender-ref ref="err.log" />
+    <appender-ref ref="info.log" />
+	<appender-ref ref="nagios.log" />
+	
+  </root>
+
+</log4j:configuration>
