@@ -1,5 +1,5 @@
 name    'BoxUpp-nagios'
-version '0.0.2'
+version '0.0.1'
 source 'UNKNOWN'
 author 'BoxUpp'
 license 'Apache License, Version 2.0'
