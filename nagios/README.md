@@ -15,6 +15,12 @@
 
 ##Overview
 
+The nagios module handles installing, configuring, and running nagios across a range of operating systems and distributions.
+
+
+
+##Module Description
+
 The nagios module installs and configure nagios with nsca which monitors application logs through nagios.In order to
 monitor logs of your application please add following files at you Java class path and define IP of nagios server at log4j.xml
 this files are available on files directory of this module.
@@ -24,10 +30,6 @@ this files are available on files directory of this module.
 	3.NagiosAppender-1.0.1-SNAPSHOT.jar
 	4.NagiosIncludeExcludeFilters.properties
 	5.nsca_send_clear.cfg
-
-##Module Description
-
-The nagios module handles installing, configuring, and running nagios across a range of operating systems and distributions.
 
 ##Architecture
 
