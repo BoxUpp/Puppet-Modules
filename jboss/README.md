@@ -1,5 +1,5 @@
-#Jboss
 ![Architecture](http://www.boxupp.com/assets/img/jboss.png)
+
 ####Table of Contents
 
 1. [Overview](#overview)
