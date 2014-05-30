@@ -28,7 +28,7 @@ The jboss module installs and configure jboss 6 and 7 with java 1.6 and java 1.7
 
 ###What jboss affects
 
-* Installs and configure jboss with nsca.
+* Installs and configure jboss.
 * Configures ip in standalone.xml file according to user requuirement.
 * Configures init scripit according to user requuirement.
 
