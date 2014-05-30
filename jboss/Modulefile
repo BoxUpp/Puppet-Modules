@@ -1,0 +1,11 @@
+name    'BoxUpp-jboss'
+version '0.0.1'
+source 'UNKNOWN'
+author 'BoxUpp'
+license 'Apache License, Version 2.0'
+summary 'This is puppet module which installs and configures jboss 6 and 7 with java'
+description 'UNKNOWN'
+project_page 'UNKNOWN'
+
+## Add dependencies, if any:
+# dependency 'username/name', '>= 1.2.0'

@@ -1,0 +1,22 @@
+#JBOSS 6 SCRIPT BY BOXUUP TEAM
+#Site http://www.boxupp.com/
+  
+
+export WEB_HOME=<%= scope.lookupvar('jboss::web_home') %>/bin
+
+case $1 in
+start)
+echo  "Starting JBoss 6" 
+nohup sh $WEB_HOME/run.sh -b <%= scope.lookupvar('jboss::jboss_machine_ip') %> & 
+;;
+stop)
+echo  "Stopping JBoss 6"
+pkill -f 'jboss'
+;;
+*) 
+echo "Usage: /etc/init.d/jboss {start|stop}"; exit 1;  
+;;  
+esac
+exit 0
+
+  

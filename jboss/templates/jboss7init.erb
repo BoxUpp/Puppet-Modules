@@ -1,0 +1,22 @@
+#JBOSS 7 SCRIPT BY BOXUUP TEAM
+#Site http://www.boxupp.com/
+  
+
+export WEB_HOME=<%= scope.lookupvar('jboss::web_home') %>
+
+case $1 in
+start)
+echo  "Starting JBoss 7" 
+nohup sh $WEB_HOME/bin/standalone.sh  2>&1 &
+;;
+stop)
+echo  "Stopping JBoss 7"
+sh  $WEB_HOME/bin/jboss-cli.sh --connect command=:shutdown 2>&1 &
+;;
+*) 
+echo "Usage: /etc/init.d/jboss {start|stop}"; exit 1;  
+;;  
+esac
+exit 0
+
+  
