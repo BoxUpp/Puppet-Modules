@@ -206,8 +206,8 @@
 	
 		case $jboss_version {
 		'7': {
-            		$jbossDownloadURI 	= "http://download.jboss.org/jbossas/7.1/jboss-as-7.1.1.Final/jboss-as-7.1.1.Final.zip"
-            		$web_home 			= "${jboss_base_path}/jboss-as-7.1.1.Final"
+            $jbossDownloadURI 	= "http://download.jboss.org/jbossas/7.1/jboss-as-7.1.1.Final/jboss-as-7.1.1.Final.zip"
+            $web_home 			= "${jboss_base_path}/jboss-as-7.1.1.Final"
 			$jboss_file_name	= "jboss-as-7.1.1.Final"
 		}
 		'6': {
