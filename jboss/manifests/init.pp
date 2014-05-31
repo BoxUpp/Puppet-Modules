@@ -180,7 +180,7 @@
 		}
 		}	
 		if ( $java_version == '6' ) {
-		exec { "set_env7":
+		exec { "set_env6":
 			command => "bash -c 'source ${env_path}'",
 			require => Exec["java_path6"];
 		}
