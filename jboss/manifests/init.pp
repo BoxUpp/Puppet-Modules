@@ -42,22 +42,22 @@
  class jboss		
  			(
 			#Define java_version here 
-			$java_version 			= hiera('jboss::java_version',		'7' ),
+			$java_version 		= hiera('jboss::java_version',	'7' ),
 			#Define java_dir here 
-			$java_dir  				= hiera('jboss::java_dir', 			'/usr/java' ),
-			$use_cache    			= hiera('jboss::use_cache',   		false ),
+			$java_dir  		= hiera('jboss::java_dir', 	'/usr/java' ),
+			$use_cache    		= hiera('jboss::use_cache',   	false ),
 			#Define OS platform here
-			$platform     			= hiera('jboss::platform',   		'x64' ),
+			$platform     		= hiera('jboss::platform',   	'x64' ),
 			# Define your source diectory path here.
-			$source_path 			= hiera('jboss::source_path',		'/vagrant/modules/jboss/files' ),
+			$source_path 		= hiera('jboss::source_path',	'/vagrant/modules/jboss/files' ),
 			# Define your environment variable diectory path here.
-			$env_path  				= hiera('jboss::env_path',			'/etc/profile.d/java.sh'),
+			$env_path  		= hiera('jboss::env_path',	'/etc/profile.d/java.sh'),
 			#Define jboss_version here 
-			$jboss_version			= hiera('jboss::jboss_version', 	'7'),			
+			$jboss_version		= hiera('jboss::jboss_version', '7'),			
 			# Define  jboss diectory path here.
-			$jboss_base_path    	= hiera('jboss::jboss_base_path',	'/usr/jboss'),
+			$jboss_base_path 	= hiera('jboss::jboss_base_path','/usr/jboss'),
 			# Define Ip of the machine where  jboss will be installed
-			$jboss_machine_ip		= hiera('jboss::jboss_machine_ip',	'192.168.111.24'),
+			$jboss_machine_ip	= hiera('jboss::jboss_machine_ip','192.168.111.24'),
 			) {
 
     		# Setting default exec path for this module
