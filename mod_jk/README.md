@@ -1,4 +1,4 @@
-[http://www.boxupp.com/free-module.html](http://www.boxupp.com/assets/img/boxupp-header1.png)
+![Architecture](http://www.boxupp.com/assets/img/boxupp-header1.png)
                                                                                
 #Mod_Jk for Apache Tomcat-Cluster
 
