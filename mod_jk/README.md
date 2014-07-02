@@ -1,3 +1,4 @@
+                                                                                          ![Architecture]     (http://www.boxupp.com/assets/img/Tomcat-cluster-diagram.png)
 #Mod_Jk for Apache Tomcat-Cluster
 
 ####Table of Contents
