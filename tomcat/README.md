@@ -16,11 +16,11 @@
 
 ##Overview
 
-The tomcat module installs the apache-tomcat-7.0.53 with jdk and sets $JAVA_HOME path
+The tomcat module installs and configures apache-tomcat 7 or 8 as required by user.
 
 ##Module Description
 
-The tomcat module handles installing, configuring, and running tomcat across a range of operating systems and distributions.
+The tomcat module handles installing, configuring, and running tomcat as service across a range of operating systems and distributions.
 
 ##Setup
 
@@ -42,7 +42,7 @@ node "tomcat.vagrant.com"
     }
 ```
 
-`Define  tomcat version. 7 or 8 in tomcat class
+Define  tomcat version. 7 or 8 in tomcat class
 
 ```tomcat 
          $tomcat_version = hiera('tomcat::tomcat_version','8'),
