@@ -1,7 +1,5 @@
 [![Campaign_image](http://www.boxupp.com/assets/img/boxupp-header1.png)](http://www.boxupp.com/free-module.html)
-
-
-#tomcat
+#Tomcat
 
 ####Table of Contents
 
@@ -43,6 +41,14 @@ node "tomcat.vagrant.com"
         include tomcat 
     }
 ```
+
+`Define  tomcat version. 7 or 8 in tomcat class
+
+```tomcat 
+         $tomcat_version = hiera('tomcat::tomcat_version','8'),
+```
+
+
 
 ##Usage
 
@@ -116,5 +122,4 @@ You can read the complete module contribution guide [on the Puppet Labs wiki.](h
 The list of contributors can be found at: [https://github.com/BoxUpp/Puppet-Modules/graphs](https://github.com/BoxUpp/Puppet-Modules/graphs)
 
 ##Sites
-####site :[http://paxcel.net/](http://paxcel.net/) 
-####site :[http://boxupp.com/](http://boxupp.com/)
+####[http://boxupp.com/](http://boxupp.com/)
