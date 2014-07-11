@@ -1,14 +1,14 @@
 {
   "checksums": {
     "files/apache-tomcat-7.0.53.tar.gz": "7062e134b4390e2ce6b54081aab26e3c",
-    "README.md": "16de6f8ff0183e748ccd1454f885ea29",
-    "tests/init.pp": "3a344dc3d554a7569c3280a72fe639d1",
-    "spec/spec_helper.rb": "a55d1e6483344f8ec6963fcb2c220372",
-    "LICENSE": "f0b6fdc310531526f257378d7bad0044",
-    "manifests/init.pp": "8a60f0f4d69d8ec82c638eb888e3dc81",
-    "README": "74dfa4e2d80584433c844e58a076494c",
     "templates/tomcat.erb": "4b98551469a2fed7fc47cfccd5600b25",
-    "Modulefile": "a74c9d427ecd79950edda7d9b1cb6abc"
+    "README.md": "8de70d2ae63de17cf1aaddf4db801cd2",
+    "LICENSE": "f0b6fdc310531526f257378d7bad0044",
+    "tests/init.pp": "3a344dc3d554a7569c3280a72fe639d1",
+    "manifests/init.pp": "8a60f0f4d69d8ec82c638eb888e3dc81",
+    "Modulefile": "a74c9d427ecd79950edda7d9b1cb6abc",
+    "spec/spec_helper.rb": "a55d1e6483344f8ec6963fcb2c220372",
+    "README": "74dfa4e2d80584433c844e58a076494c"
   },
   "types": [
 
