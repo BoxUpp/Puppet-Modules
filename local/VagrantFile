@@ -1,0 +1,49 @@
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+Vagrant.configure("2") do |config|
+
+			
+	config.vm.define :pmaster do |pmaster|
+		pmaster.vm.hostname = "master"
+		pmaster.vm.box = "Ubuntu"
+		pmaster.vm.box_url = "http://cloud-images.ubuntu.com/vagrant/precise/current/precise-server-cloudimg-i386-vagrant-disk1.box"
+		pmaster.vm.boot_timeout = 300
+						
+		pmaster.vm.network :private_network, ip: "192.168.111.25"
+		pmaster.vm.network "forwarded_port", guest: 8080, host: 8091,auto_correct: true
+		pmaster.vm.synced_folder "/home/asha/Boxupp/folder", "/home/vagrant/folder"
+						
+		
+		pmaster.vm.provision "shell", path: "./scripts/run.sh", privileged:"true"
+						
+		pmaster.vm.provider "virtualbox" do |prov|
+				prov.customize ["modifyvm", :id, "--memory", "1024"]
+				prov.customize ["modifyvm", :id, "--cpuexecutioncap", "12"]
+				prov.gui=true
+				prov.name="vmaster"
+		end
+	
+	end
+			
+	config.vm.define :pagent do |pagent|
+		pagent.vm.hostname = "vagent"
+		pagent.vm.box = "Ubuntu"
+		pagent.vm.box_url = "http://cloud-images.ubuntu.com/vagrant/precise/current/precise-server-cloudimg-i386-vagrant-disk1.box"
+		pagent.vm.boot_timeout = 300
+						
+		pagent.vm.network :private_network, ip: "192.168.111.24"
+		pagent.vm.network "forwarded_port", guest: 8080, host: 8091,auto_correct: true
+		pagent.vm.synced_folder "/home/asha/Boxupp/folder", "/home/vagrant/"
+						
+		
+		pagent.vm.provision "shell", path: "./scripts/run.sh", privileged:"true"
+						
+		pagent.vm.provider "virtualbox" do |prov|
+				prov.customize ["modifyvm", :id, "--memory", "1024"]
+				prov.customize ["modifyvm", :id, "--cpuexecutioncap", "40"]
+				prov.gui=true
+				prov.name="vboxagent"
+		end
+	
+	end
+end
